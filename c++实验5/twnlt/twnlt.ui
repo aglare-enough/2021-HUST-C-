@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>twnlt</class>
+ <widget class="QMainWindow" name="twnlt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>790</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1045</width>
+    <height>790</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>公交换乘</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/map.png);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1045</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Q">
+    <property name="title">
+     <string>查询</string>
+    </property>
+    <addaction name="action_zszc"/>
+    <addaction name="action_zdjl"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_Q"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_zszc">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>最少转乘</string>
+   </property>
+   <property name="toolTip">
+    <string>最少转乘</string>
+   </property>
+  </action>
+  <action name="action_zdjl">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>最短路径</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>读入地图</string>
+   </property>
+  </action>
+  <action name="action_exit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

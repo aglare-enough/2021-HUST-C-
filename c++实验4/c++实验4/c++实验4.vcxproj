@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c7e55050-93cc-4a93-a50d-67942f2e3fae}</ProjectGuid>
-    <RootNamespace>c实验3</RootNamespace>
+    <ProjectGuid>{11973d65-1785-4415-807e-f54854b708b4}</ProjectGuid>
+    <RootNamespace>c实验4</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>D:\c\C++\lab\c++实验3\Debug;$(LibraryPath)</LibraryPath>
+    <LibraryPath>D:\c\C++\lab\c++实验4-new\c++实验4\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -93,7 +93,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>TestSTACK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>TestMAT.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,12 +141,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\c++实验2\queue.h" />
-    <ClInclude Include="stack.h" />
+    <ClInclude Include="mat.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\c++实验2\intergerQueue.cpp" />
-    <ClCompile Include="intergerStack.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

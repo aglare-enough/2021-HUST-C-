@@ -12,7 +12,7 @@ int STACK::size() const noexcept
 
 STACK::operator int() const noexcept
 {
-    return QUEUE::operator int() + q.operator int();
+    return QUEUE::operator int() + (int)q;
 }
 
 STACK& STACK::operator<<(int e)
@@ -58,8 +58,8 @@ STACK& STACK::operator>>(int& e)
 
 STACK& STACK::operator=(const STACK& s)
 {
-    QUEUE::operator=((QUEUE&)s);
-    q.operator=((QUEUE&)s.q);
+    *(QUEUE *)this = (QUEUE&)s;
+    q=s.q;
     return *this;
 }
 
